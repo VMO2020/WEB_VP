@@ -1,0 +1,90 @@
+.gallery__img{
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.gallery__img:hover{
+  transform: scale(1.02);
+}
+
+.gallery__img--big{
+  height: 400px;
+}
+
+.gallery__img--small{
+  height: 200px;
+}
+
+.modal{
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: none;
+}
+
+.modal__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal img{
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal__btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  background: var(--color-back);
+  font-size: 2.5em;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: monospace;
+}
+
+.modal--show{
+  display: block;
+}
+
+/* --------------------  Estilos RESPONSIVE -------------------------- */
+@media screen and (min-width:480px){
+  .modal img{
+    width: auto;
+    max-height: 85%;
+  }
+}
+
+@media screen and (min-width:768px){
+  .modal img{
+    width: auto;
+    max-height: 80%;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .modal img{
+    width: auto;
+    max-height: 75%;
+  }
+}
+
+@media screen and (min-width:1600px){
+  .modal img{
+    width: auto;
+    max-height: 70%;
+  }
+}
